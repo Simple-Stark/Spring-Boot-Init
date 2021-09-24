@@ -1,3 +1,6 @@
-# ×Ô¶¨ÒåÆô¶¯¶Ë¿Ú
+# è‡ªå®šä¹‰å¯åŠ¨ç«¯å£
 server:
   port: 9000
+
+logging:
+  config: classpath:log4j2/log4j2-spring-debug.xml
