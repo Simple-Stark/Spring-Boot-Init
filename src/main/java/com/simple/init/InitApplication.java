@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author Simple
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.simple")
 public class InitApplication {
 
     public static void main(String[] args) {
