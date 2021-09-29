@@ -1,13 +1,6 @@
-# 自定义启动端口
-server:
-  port: 9000
-
-
-logging:
-  config: classpath:log4j2/log4j2-spring-debug.xml
 spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/mybatis_plus?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: root
-    password: hello mysql
+  profiles:
+    active: debug
+server:
+  servlet:
+    context-path: /init
