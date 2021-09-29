@@ -26,9 +26,10 @@
 
 Spring-Common 包地址：https://github.com/Simple-Stark/common
 
-- 基于Spring-Common 的全局统一消息返回实践：https://github.com/Simple-Stark/Spring-Boot-Init/blob/master/src/main/java/com/simple/init/controller/TestController.java
-- 基于Spring-Common 的自定义消息返回通知：https://github.com/Simple-Stark/Spring-Boot-Init/blob/master/src/main/java/com/simple/init/common/UserCodeMsg.java
-- 基于Spring-Common 的通过单测自动生成代码：https://github.com/Simple-Stark/Spring-Boot-Init/blob/master/src/test/java/com/simple/init/InitApplicationTests.java
+#### Spring-Common最佳实践
+- 全局统一消息返回实践：https://github.com/Simple-Stark/Spring-Boot-Init/blob/master/src/main/java/com/simple/init/controller/TestController.java
+- 自定义消息返回通知：https://github.com/Simple-Stark/Spring-Boot-Init/blob/master/src/main/java/com/simple/init/common/UserCodeMsg.java
+- 通过单元测试自动生成代码：https://github.com/Simple-Stark/Spring-Boot-Init/blob/master/src/test/java/com/simple/init/InitApplicationTests.java
 
 
 ## 已有功能
