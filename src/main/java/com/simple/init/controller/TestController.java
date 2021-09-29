@@ -2,6 +2,7 @@ package com.simple.init.controller;
 
 import com.simple.common.exception.SimpleException;
 import com.simple.common.result.Result;
+import com.simple.init.common.UserCodeMsg;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -45,5 +46,23 @@ public class TestController {
     public Result<Void> simpleExp() {
         log.info("test SimpleException");
         throw new SimpleException("自定义异常测试");
+    }
+
+    /**
+     * 【测试】自定义消息返回
+     * @return null
+     */
+    @GetMapping("/userCode")
+    public Result<Void> userCode() {
+        return Result.error(UserCodeMsg.USER_LOGIN_ERROR);
+    }
+
+    /**
+     * 【测试】自定义消息通过SimpleException返回
+     * @return null
+     */
+    @GetMapping("/userCodeException")
+    public Result<Void> userCodeException() {
+        throw new SimpleException(UserCodeMsg.USER_OTHER_LOGIN);
     }
 }
