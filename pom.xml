@@ -37,9 +37,9 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-        <!-- 自定义Common包 -->
+        <!-- 自定义Common包，已发布至中央仓库 -->
         <dependency>
-            <groupId>com.simple</groupId>
+            <groupId>com.simplestark</groupId>
             <artifactId>common</artifactId>
             <version>1.0.0</version>
         </dependency>
