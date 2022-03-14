@@ -1,17 +1,12 @@
 package com.simple.init.controller;
 
-import com.simple.common.dict.util.DictCoverUtil;
 import com.simple.common.exception.SimpleException;
 import com.simple.common.result.Result;
 import com.simple.init.common.UserCodeMsg;
-import com.simple.init.entity.User;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
 
 /**
  * 测试控制层
@@ -22,12 +17,6 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/test")
 public class TestController {
-
-    /**
-     * 字典转换工具类
-     */
-    @Resource
-    DictCoverUtil dictCoverUtil;
 
     /**
      * 【测试】项目是否成功启动及日志打印
@@ -75,15 +64,5 @@ public class TestController {
     @GetMapping("/userCodeException")
     public Result<Void> userCodeException() {
         throw new SimpleException(UserCodeMsg.USER_OTHER_LOGIN);
-    }
-
-    @GetMapping("/dictTest")
-    public Result<User> dictTest() {
-        User user = new User();
-        user.setName("Simple");
-        user.setSexCode("1");
-        user.setAge(20);
-        dictCoverUtil.coverCodeToMean(user);
-        return Result.success(user);
     }
 }

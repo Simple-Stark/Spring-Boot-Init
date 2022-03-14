@@ -1,6 +1,5 @@
 package com.simple.init.entity;
 
-import com.simple.common.dict.util.DictPint;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -18,7 +17,6 @@ public class User implements Serializable {
 
     private String sex;
 
-    @DictPint(dictCode = "SEX",afterValueTo = "sex")
     private String sexCode;
 
     private Integer age;

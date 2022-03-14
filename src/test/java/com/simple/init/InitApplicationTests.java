@@ -1,6 +1,6 @@
 package com.simple.init;
 
-import com.simple.common.utils.MyBatisPlusGenerator;
+import com.simple.common.mybatisplus.MyBatisPlusGenerator;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
